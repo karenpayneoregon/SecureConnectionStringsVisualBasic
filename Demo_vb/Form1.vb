@@ -3,13 +3,9 @@
 Public Class Form1
     Private operations As New ConnectionProtection(Application.ExecutablePath)
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        '
-        ' This line need to be executed once before giving the app to your customer
-        ' when distributing remove this line.
-        '
-        operations.EncryptFile()
-
-        operations.DecryptFile()
+        If Not operations.IsProtected() Then
+            operations.EncryptFile()
+        End If
         'TODO: This line of code loads data into the 'PeopleDataSet.People' table. You can move, or remove it, as needed.
 
         Me.PeopleTableAdapter.Fill(Me.PeopleDataSet.People)

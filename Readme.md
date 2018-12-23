@@ -10,4 +10,4 @@ Examples
 - Working with manage data provider
 
 
-Article location
+[Article location](https://social.technet.microsoft.com/wiki/contents/articles/52301.secure-connection-string-for-windows-forms-vb-net.aspx)
