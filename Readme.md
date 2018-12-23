@@ -1,5 +1,5 @@
 
-# TechNet December 2018 article: VB.NET secure connection string
+# TechNet December 2018: VB.NET secure connection string
 
 ## Introduction
 
