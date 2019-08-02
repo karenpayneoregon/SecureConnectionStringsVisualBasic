@@ -1,15 +1,9 @@
-﻿Imports ConfigurationLibrary_vb
-
-Public Class Form1
-    Private operations As New ConnectionProtection(Application.ExecutablePath)
+﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If Not operations.IsProtected() Then
-            operations.EncryptFile()
-        End If
+
         'TODO: This line of code loads data into the 'PeopleDataSet.People' table. You can move, or remove it, as needed.
 
         Me.PeopleTableAdapter.Fill(Me.PeopleDataSet.People)
-        operations.EncryptFile()
 
     End Sub
     Private Sub PeopleBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs) Handles PeopleBindingNavigatorSaveItem.Click
